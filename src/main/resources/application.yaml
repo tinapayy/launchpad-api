@@ -1,3 +1,11 @@
 spring:
   application:
     name: launchpad-api
+  autoconfigure:
+    exclude: 
+      -org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+
+server:
+  port: 8080
